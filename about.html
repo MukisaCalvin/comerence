@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zuck-Tech</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet"
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="log">
+                    <span>Zeck</span>Tech
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Product.html">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="chart.html"> <img src="carts.png" alt="cart" width="30px"  height="30px"></a>
+               <img src="menu.png" class="menu" alt="menu" onclick="menutoggle()">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col2">
+                <h1>Zech-Tech stores</h1><br> We deal selling and delivering home appliances of all types<br>
+                currently we can only do delivery of products around Kampala and the nearing places<br>
+                we belive in making our customers happy thats why in the entire country<br>
+                we are the number one distributors of quality, efficency and affordable products <br>
+                because thats is our culture and at Zech-Tech stores we belive in culture.<br>
+                Zech-Tech stores is not only dealing in home appliances we also provide IT service <br> 
+                like web development, troubleshooting and many others contact as through our social media <br>
+                handles and also you can do it via the contact page.
+
+            </div>
+            <div class="col2">
+                <img src="about.jpg" alt="">
+            </div>
+        </div>
+        <script>
+            var menuitems = document.getElementById("menuitems")
+    
+            menuitems.style.maxHeight = "0px"
+    
+            function menutoggle(){
+                if(menuitems.style.maxHeight == "0px" )
+                {
+                    menuitems.style.maxHeight ="200px"
+                }
+                else
+                {
+                    menuitems.style.maxHeight = "0px"
+                }
+            }
+        </script>
+</body>
+</html>

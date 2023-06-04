@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zuck-Tech</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="log">
+                <span>Zuck</span>Tech
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="chart.html"> <img src="carts.png" alt="cart" width="30px"  height="30px"></a>
+           <img src="menu.png" class="menu" alt="menu" onclick="menutoggle()">
+        </div>
+        
+    </div>
+        <!----chart items-->
+        <div class="small cart_page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="chat_info">
+                            <img src="pro15.jpg" alt="">
+                            <div>
+                                <p>Hisense smart Tv</p>
+                                Price: 1000000Shs
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>10000000Shs</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="chat_info">
+                            <img src="pro15.jpg" alt="">
+                            <div>
+                                <p>Hisense smart Tv</p>
+                                Price: 1000000Shs
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>10000000Shs</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="chat_info">
+                            <img src="pro15.jpg" alt="">
+                            <div>
+                                <p>Hisense smart Tv</p>
+                                Price: 1000000Shs
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>10000000Shs</td>
+                </tr>
+            </table>
+        </div>
+        <div class="total_price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>1000000Shs</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>5000Shs</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>1000500Sha</td>
+                </tr>
+            </table>
+        </div>
+    <!-----footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <span>Derek</span>stores
+                    <p>Our mission is to provide you with teh best quality home appliances.</p>
+                </div>
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Poilcy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems")
+
+        menuitems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px" )
+            {
+                menuitems.style.maxHeight ="200px"
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    
+</body>
+</html>

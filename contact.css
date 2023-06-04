@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    color: orangered;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.log{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.head{
+    text-align: center;
+    font-size: larger;
+}
+.tables{
+    display:flex;
+    padding-left:190px;
+    align-items: center;
+    padding-top: 150px;
+}
+label{
+    width: 140px;
+    display: inline-block;
+}
+textarea{
+    padding: 6px;
+    font-size: 14px;
+
+}
+input{
+    font-size: 14px;
+    padding: 6px;
+}
+form{
+    padding-left:100px;
+}
+.menu{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+@media only screen and (max-width: 400px){
+    .container{
+        width: 90%;
+        height: 90%;
+    }
+}

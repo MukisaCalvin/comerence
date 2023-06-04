@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Derekstores</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="log">
+                <span>Derek</span>stores
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="chart.html"> <img src="carts.png" alt="cart" width="30px"  height="30px"></a>
+           <img src="menu.png" class="menu" alt="menu" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    <!-------------------------------single products deails-->
+    <div class="small single_product" >
+        <div class="row">
+            <div class="col2">
+                <img src="pro19.jpg" width="100%" id="product_img">
+                <div class="small_img_row">
+                    <div class="small_img_col">
+                        <img src="pro19.jpg" width="100%" class="small_img">
+                    </div>
+                    <div class="small_img_col">
+                        <img src="pro15.jpg" width="100%" class="small_img">
+                    </div>
+                    <div class="small_img_col">
+                        <img src="pro19.jpg" width="100%" class="small_img">
+                    </div>
+                    <div class="small_img_col">
+                        <img src="pro19.jpg" width="100%" class="small_img">
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <p>Hisense smart Tv</p>
+                <h1>Hisense 32 inch <br>smart Tv</h1>
+                <h4>1500000Shs</h4>
+                <select>
+                    <option>32 inch</option>
+                    <option>42 inch</option>
+                    <option>52 inch</option>
+                    <option>72 inch </option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details</h3><br>
+                    This Tv has is a fully package smart television with <br>
+                the quality features and capabilities you can think about in a Tv
+            </div>
+        </div>
+    </div>
+
+    <div class="small">
+        <div class="row_2">
+            <h2>Realated Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    <div class="small">
+        <div class="row">
+            <div class="col4">
+                <img src="pro19.jpg" >
+                <h4>Samsung refrigerator</h4>
+                <p>1500000shs</p>
+            </div>
+            <div class="col4">
+                <img src="pro5.jpg" alt="">
+                <h4>Dj bass woofer</h4>
+                <p>600000shs</p>
+            </div>
+            <div class="col4">
+                <img src="pro13.jpg" alt="">
+                <h4>Hisense smart Tv 32 inch</h4>
+                <p>1000000shs</p>
+            </div>
+            <div class="col4">
+                <img src="pro2.jpg" alt="">
+                <h4>LG refrigerator</h4>
+                <p>1100000shs</p>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <!-----footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="log">
+                        <img src="pe1.png" alt="">
+                        <img src="pe2.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-1">
+                    <span>Derek</span>stores
+                    <p>Our mission is to provide you with teh best quality home appliances.</p>
+                </div>
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Poilcy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-1">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------js for toggle menu-->
+    <script>
+        var menuitems = document.getElementById("menuitems")
+
+        menuitems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px" )
+            {
+                menuitems.style.maxHeight ="200px"
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    <!-------js for product gallery -->
+    <script>
+        var product_img = document.getElementById("product_img");
+        var small_img = document.getElementsByClassName("small_img");
+        small_img[0].onclick = function()
+        {
+            product_img.src = small_img[0].src;
+        }
+        small_img[1].onclick = function()
+        {
+            product_img.src = small_img[1].src;
+        }
+        small_img[2].onclick = function()
+        {
+            product_img.src = small_img[2].src;
+        }
+        small_img[3].onclick = function()
+        {
+            product_img.src = small_img[3].src;
+        }
+    </script>
+</body>
+</html>
